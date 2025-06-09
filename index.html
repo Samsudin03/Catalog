@@ -1,6 +1,4 @@
-# Membuat ulang HTML katalog seserahan dengan desain yang lebih menarik dan unik
-
-unique_html = """<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
@@ -120,14 +118,3 @@ unique_html = """<!DOCTYPE html>
   </footer>
 </body>
 </html>
-"""
-
-# Tulis HTML unik ke file
-unique_file = base_dir / "index.html"
-unique_file.write_text(unique_html, encoding="utf-8")
-
-# Perbarui ZIP file
-with ZipFile(zip_path, 'w') as zipf:
-    zipf.write(unique_file, arcname="seserahan-catalog/index.html")
-
-zip_path.name
